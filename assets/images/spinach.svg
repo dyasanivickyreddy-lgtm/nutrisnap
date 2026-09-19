@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="spinachGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4e9f3d"/>
+      <stop offset="60%" stop-color="#2e7d32"/>
+      <stop offset="100%" stop-color="#1b5e20"/>
+    </linearGradient>
+    <linearGradient id="spinachGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#66bb6a"/>
+      <stop offset="70%" stop-color="#388e3c"/>
+      <stop offset="100%" stop-color="#1b4d2e"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1b2a26" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" rx="32" fill="#faf6f0"/>
+  <g filter="url(#shadow)">
+    <!-- Back Leaf -->
+    <path d="M 230,320 C 310,290 350,190 320,110 C 290,40 180,60 160,140 C 140,210 180,290 230,320 Z" fill="url(#spinachGrad2)" opacity="0.85" transform="rotate(-15 230 200)"/>
+    <!-- Front Leaf -->
+    <path d="M 160,350 C 70,300 40,180 90,90 C 140,20 270,50 280,150 C 290,250 220,330 160,350 Z" fill="url(#spinachGrad1)"/>
+    <!-- Veins Front Leaf -->
+    <path d="M 165,340 Q 185,220 180,60" fill="none" stroke="#a5d6a7" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 180,240 Q 220,210 245,190" fill="none" stroke="#a5d6a7" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+    <path d="M 178,200 Q 130,170 100,150" fill="none" stroke="#a5d6a7" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+    <path d="M 181,150 Q 230,120 250,105" fill="none" stroke="#a5d6a7" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <path d="M 180,110 Q 140,90 120,80" fill="none" stroke="#a5d6a7" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <!-- Leaf Stem base -->
+    <path d="M 160,350 C 158,365 152,375 145,382 C 142,385 147,388 152,384 C 162,375 168,362 165,350 Z" fill="#81c784"/>
+  </g>
+</svg>

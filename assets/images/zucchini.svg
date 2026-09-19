@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="zucGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4caf50"/>
+      <stop offset="60%" stop-color="#2e7d32"/>
+      <stop offset="100%" stop-color="#1b5e20"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f1a17" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" rx="32" fill="#0f1a17"/>
+  <g filter="url(#shadow)" transform="rotate(30 200 200)">
+    <rect x="150" y="60" width="100" height="280" rx="50" fill="url(#zucGrad)"/>
+    <path d="M 180,75 L 220,75 L 210,60 L 190,60 Z" fill="#1b4d2e"/>
+    <path d="M 175,90 Q 200,95 225,90" fill="none" stroke="#a5d6a7" stroke-width="4" stroke-linecap="round" opacity="0.3"/>
+    <path d="M 175,180 Q 200,185 225,180" fill="none" stroke="#a5d6a7" stroke-width="4" stroke-linecap="round" opacity="0.3"/>
+  </g>
+</svg>

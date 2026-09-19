@@ -1,0 +1,822 @@
+{
+  "spinach": {
+    "id": "spinach",
+    "name": "Baby Spinach",
+    "tagline": "Plant-Based Non-Heme Iron & Bone Calcium Density",
+    "category": "Leafy Green",
+    "shelfLifeDays": 5,
+    "photoUrl": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80",
+    "bioavailabilityNote": "Pairing non-heme iron in spinach with Vitamin C (e.g., lemon juice or bell peppers) increases iron absorption efficiency by up to 300%.",
+    "colorSignature": { "r": 45, "g": 120, "b": 50 },
+    "macros": { "calories": 23, "protein": 2.9, "carbs": 3.6, "fat": 0.4 },
+    "minerals": {
+      "iron": 2.7,
+      "calcium": 99,
+      "potassium": 558,
+      "vitaminC": 28.1,
+      "fiber": 2.2,
+      "magnesium": 79,
+      "zinc": 0.53
+    },
+    "sustainability": { "co2PerKg": 0.38, "avgCostPerKg": 4.50 },
+    "comparisonTargets": ["beetroot", "broccoli", "avocado"],
+    "dishes": [
+      {
+        "id": "palak_paneer",
+        "title": "Palak Paneer (Creamy Spinach Curry)",
+        "time": "30 mins",
+        "difficulty": "Medium",
+        "dietaryTags": ["high-protein", "vegetarian", "comfort"],
+        "photoUrl": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["300g fresh spinach", "200g paneer cubes", "1 onion & 2 garlic cloves", "1 tsp garam masala", "2 tbsp cream"],
+        "steps": [
+          "Blanch spinach leaves in boiling water for 2 mins, then submerge in ice water to maintain vibrant green color.",
+          "Puree blanched spinach with 1 green chili.",
+          "Sauté diced onions, ginger, and garlic until golden. Add cumin, coriander, and garam masala.",
+          "Stir in spinach puree and golden paneer cubes. Simmer for 5 mins and finish with cream."
+        ]
+      },
+      {
+        "id": "garlic_spinach",
+        "title": "Garlic Sautéed Spinach & Toasted Pine Nuts",
+        "time": "12 mins",
+        "difficulty": "Easy",
+        "dietaryTags": ["keto", "vegan", "quick"],
+        "photoUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["250g fresh spinach", "3 cloves garlic, thinly sliced", "2 tbsp pine nuts", "1 tbsp olive oil", "Lemon juice"],
+        "steps": [
+          "Toast pine nuts in a dry skillet over medium heat until golden brown (approx 2 mins); set aside.",
+          "Heat olive oil in skillet and sauté sliced garlic until fragrant (don't burn!).",
+          "Add fresh spinach in batches, tossing gently until just wilted (approx 3 mins).",
+          "Remove from heat, squeeze fresh lemon juice, and top with toasted pine nuts."
+        ]
+      },
+      {
+        "id": "spinach_pastry",
+        "title": "Greek Spanakopita Spinach Bites",
+        "time": "40 mins",
+        "difficulty": "Medium",
+        "dietaryTags": ["vegetarian", "comfort"],
+        "photoUrl": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["200g cooked spinach, drained", "150g crumbled feta", "1 egg", "Phyllo pastry sheets", "Melted butter"],
+        "steps": [
+          "Squeeze all excess moisture from cooked spinach.",
+          "Mix spinach with feta, beaten egg, dill, and black pepper.",
+          "Cut phyllo dough into strips, brush with melted butter, and fold spinach filling into triangles.",
+          "Bake at 190°C (375°F) for 20 mins until golden and crispy."
+        ]
+      }
+    ]
+  },
+  "bell_pepper": {
+    "id": "bell_pepper",
+    "name": "Red Bell Pepper",
+    "tagline": "Cellular Antioxidant & High-Dose Vitamin C Defense",
+    "category": "Capsicum / Fruit-Veggie",
+    "shelfLifeDays": 8,
+    "photoUrl": "https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?auto=format&fit=crop&w=800&q=80",
+    "bioavailabilityNote": "Red bell peppers deliver over 140% of daily Vitamin C requirements. Eating them raw preserves heat-sensitive L-ascorbic acid.",
+    "colorSignature": { "r": 210, "g": 30, "b": 30 },
+    "macros": { "calories": 31, "protein": 1.0, "carbs": 6.0, "fat": 0.3 },
+    "minerals": {
+      "iron": 0.4,
+      "calcium": 7,
+      "potassium": 211,
+      "vitaminC": 127.7,
+      "fiber": 2.1,
+      "magnesium": 12,
+      "zinc": 0.25
+    },
+    "sustainability": { "co2PerKg": 0.48, "avgCostPerKg": 3.80 },
+    "comparisonTargets": ["tomato", "broccoli", "spinach"],
+    "dishes": [
+      {
+        "id": "stuffed_peppers",
+        "title": "Quinoa & Black Bean Stuffed Bell Peppers",
+        "time": "35 mins",
+        "difficulty": "Medium",
+        "dietaryTags": ["high-protein", "vegan", "comfort"],
+        "photoUrl": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["3 large bell peppers, halved", "1 cup cooked quinoa", "1 can black beans", "1/2 cup corn", "Vegan cheese"],
+        "steps": [
+          "Pre-bake halved peppers cut side up for 10 mins at 190°C.",
+          "Mix cooked quinoa, rinsed black beans, corn, cumin, chili powder, and salsa.",
+          "Stuff pepper halves generously with quinoa filling.",
+          "Top with cheese and bake for 20 mins until cheese bubbles."
+        ]
+      },
+      {
+        "id": "fajita_skillet",
+        "title": "Sizzling Triple-Pepper Fajita Skillet",
+        "time": "20 mins",
+        "difficulty": "Easy",
+        "dietaryTags": ["keto", "vegan", "quick"],
+        "photoUrl": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["3 bell peppers, sliced", "1 red onion, sliced", "Fajita seasoning", "Avocado & lime"],
+        "steps": [
+          "Heat cast-iron skillet over high heat until smoking.",
+          "Add 2 tbsp oil, then toss in sliced peppers and onions.",
+          "Sauté vigorously for 6-8 mins until charred yet crisp-tender.",
+          "Sprinkle fajita seasoning, squeeze lime juice, and serve."
+        ]
+      },
+      {
+        "id": "romesco_sauce",
+        "title": "Smoky Spanish Roasted Red Pepper Romesco",
+        "time": "15 mins",
+        "difficulty": "Easy",
+        "dietaryTags": ["keto", "vegan", "quick"],
+        "photoUrl": "https://images.unsplash.com/photo-1472476443507-c7a5948772fc?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["2 roasted red peppers", "1/3 cup toasted almonds", "1 garlic clove", "1 tbsp sherry vinegar", "Olive oil"],
+        "steps": [
+          "Pulse toasted almonds and garlic in a food processor until finely ground.",
+          "Add roasted red peppers, sherry vinegar, smoked paprika, and salt.",
+          "Stream in olive oil while blending until sauce reaches a rustic paste consistency.",
+          "Serve alongside grilled vegetables or crusty bread."
+        ]
+      }
+    ]
+  },
+  "carrot": {
+    "id": "carrot",
+    "name": "Heirloom Orange Carrot",
+    "tagline": "Pro-Vitamin A Beta-Carotene & Ocular Protection",
+    "category": "Root Vegetable",
+    "shelfLifeDays": 14,
+    "photoUrl": "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&w=800&q=80",
+    "bioavailabilityNote": "Beta-carotene is fat-soluble. Roasting carrots with healthy oils (olive oil or avocado) increases carotenoid bioavailability by up to 650%.",
+    "colorSignature": { "r": 235, "g": 125, "b": 20 },
+    "macros": { "calories": 41, "protein": 0.9, "carbs": 9.6, "fat": 0.2 },
+    "minerals": {
+      "iron": 0.3,
+      "calcium": 33,
+      "potassium": 320,
+      "vitaminC": 5.9,
+      "fiber": 2.8,
+      "magnesium": 12,
+      "zinc": 0.24
+    },
+    "sustainability": { "co2PerKg": 0.35, "avgCostPerKg": 2.10 },
+    "comparisonTargets": ["sweet_potato", "pumpkin", "spinach"],
+    "dishes": [
+      {
+        "id": "moroccan_carrots",
+        "title": "Moroccan Honey Glazed Carrots with Cumin",
+        "time": "30 mins",
+        "difficulty": "Easy",
+        "dietaryTags": ["vegetarian", "comfort"],
+        "photoUrl": "https://images.unsplash.com/photo-1522184216316-3c25379f9637?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["500g carrots, halved lengthways", "2 tbsp honey", "1 tsp cumin seeds", "1 tbsp olive oil", "Fresh parsley"],
+        "steps": [
+          "Toss cut carrots with olive oil, honey, ground cumin, sea salt, and black pepper.",
+          "Spread on a baking sheet in a single layer.",
+          "Roast at 200°C (400°F) for 25 mins until tender and caramelized around the edges.",
+          "Garnish with chopped fresh parsley before serving."
+        ]
+      },
+      {
+        "id": "carrot_soup",
+        "title": "Silky Carrot Ginger & Coconut Soup",
+        "time": "25 mins",
+        "difficulty": "Easy",
+        "dietaryTags": ["vegan", "comfort"],
+        "photoUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["500g carrots, chopped", "1 tbsp fresh ginger, grated", "400ml coconut milk", "2 cups vegetable broth", "Lime juice"],
+        "steps": [
+          "Sauté ginger and onions in a pot until soft.",
+          "Add chopped carrots and vegetable broth. Bring to a boil and simmer for 15 mins until carrots are soft.",
+          "Pour in coconut milk and blend until silky smooth using an immersion blender.",
+          "Finish with a squeeze of fresh lime juice and chili flakes."
+        ]
+      },
+      {
+        "id": "carrot_salad",
+        "title": "Crispy Ribbon Carrot & Chickpea Salad",
+        "time": "15 mins",
+        "difficulty": "Beginner",
+        "dietaryTags": ["high-protein", "vegan", "quick"],
+        "photoUrl": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["3 large carrots, ribboned", "1 can chickpeas, rinsed", "1/3 cup toasted pumpkin seeds", "Tahini dressing"],
+        "steps": [
+          "Use a vegetable peeler to shave carrots into long, thin ribbons.",
+          "Combine carrot ribbons, rinsed chickpeas, and toasted pumpkin seeds in a large bowl.",
+          "Whisk together tahini, lemon juice, garlic, and water for dressing.",
+          "Toss salad gently with dressing right before serving."
+        ]
+      }
+    ]
+  },
+  "broccoli": {
+    "id": "broccoli",
+    "name": "Crown Broccoli",
+    "tagline": "Sulforaphane Phytochemicals & Phase II Enzyme Activation",
+    "category": "Cruciferous",
+    "shelfLifeDays": 7,
+    "photoUrl": "https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?auto=format&fit=crop&w=800&q=80",
+    "bioavailabilityNote": "Cutting broccoli and waiting 10 minutes before cooking activates myrosinase enzymes, maximizing anticarcinogenic sulforaphane formation.",
+    "colorSignature": { "r": 35, "g": 105, "b": 45 },
+    "macros": { "calories": 34, "protein": 2.8, "carbs": 6.6, "fat": 0.4 },
+    "minerals": {
+      "iron": 0.7,
+      "calcium": 47,
+      "potassium": 316,
+      "vitaminC": 89.2,
+      "fiber": 2.6,
+      "magnesium": 21,
+      "zinc": 0.41
+    },
+    "sustainability": { "co2PerKg": 0.40, "avgCostPerKg": 2.90 },
+    "comparisonTargets": ["spinach", "bell_pepper", "zucchini"],
+    "dishes": [
+      {
+        "id": "charred_broccoli",
+        "title": "Charred Garlic Broccoli with Lemon & Parmesan",
+        "time": "15 mins",
+        "difficulty": "Easy",
+        "dietaryTags": ["keto", "vegetarian", "quick"],
+        "photoUrl": "https://images.unsplash.com/photo-1584270354949-c26b0d5b4a0c?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["1 head broccoli, florets", "3 garlic cloves, minced", "1/3 cup grated parmesan", "Lemon zest"],
+        "steps": [
+          "Toss florets with olive oil, minced garlic, sea salt, and black pepper.",
+          "Roast at 220°C (425°F) for 15 mins until edges are crispy and charred.",
+          "Remove from oven, toss with fresh lemon zest, juice, and grated parmesan."
+        ]
+      },
+      {
+        "id": "broccoli_soup",
+        "title": "Velvety Broccoli & Aged Cheddar Soup",
+        "time": "25 mins",
+        "difficulty": "Medium",
+        "dietaryTags": ["high-protein", "vegetarian", "comfort"],
+        "photoUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["300g broccoli florets", "150g sharp cheddar", "2 cups vegetable stock", "1 cup milk", "Onion & garlic"],
+        "steps": [
+          "Sauté onion and garlic in butter. Add flour to form a roux.",
+          "Whisk in milk and stock; bring to boil until thickened.",
+          "Add chopped broccoli florets and simmer for 10 mins until tender.",
+          "Stir in shredded sharp cheddar off the heat until melted and velvety."
+        ]
+      },
+      {
+        "id": "broccoli_stirfry",
+        "title": "Ginger Garlic Broccoli Stir-Fry with Sesame",
+        "time": "18 mins",
+        "difficulty": "Easy",
+        "dietaryTags": ["vegan", "quick"],
+        "photoUrl": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["1 head broccoli florets", "2 tbsp soy sauce", "1 tbsp sesame oil", "1 tbsp ginger, julienned", "Sesame seeds"],
+        "steps": [
+          "Blanch broccoli florets for 1 min in boiling water, then drain.",
+          "Heat sesame oil in wok over high heat; sauté ginger and garlic for 30s.",
+          "Add broccoli florets and stir-fry for 3 mins.",
+          "Pour soy sauce glaze; toss to coat and sprinkle sesame seeds."
+        ]
+      }
+    ]
+  },
+  "tomato": {
+    "id": "tomato",
+    "name": "Vine-Ripe Tomato",
+    "tagline": "Lycopene Antioxidant & Osmotic Hydration",
+    "category": "Nightshade / Fruit-Veggie",
+    "shelfLifeDays": 6,
+    "photoUrl": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=800&q=80",
+    "bioavailabilityNote": "Cooking tomatoes breaks down cell walls, making lycopene (a powerful antioxidant for cardiovascular health) 4x more bioavailable than raw.",
+    "colorSignature": { "r": 210, "g": 55, "b": 40 },
+    "macros": { "calories": 18, "protein": 0.9, "carbs": 3.9, "fat": 0.2 },
+    "minerals": {
+      "iron": 0.3,
+      "calcium": 10,
+      "potassium": 237,
+      "vitaminC": 13.7,
+      "fiber": 1.2,
+      "magnesium": 11,
+      "zinc": 0.17
+    },
+    "sustainability": { "co2PerKg": 0.42, "avgCostPerKg": 3.20 },
+    "comparisonTargets": ["spinach", "bell_pepper", "broccoli"],
+    "dishes": [
+      {
+        "id": "shakshuka",
+        "title": "Herbed Shakshuka with Poached Eggs",
+        "time": "25 mins",
+        "difficulty": "Easy",
+        "dietaryTags": ["high-protein", "vegetarian", "comfort"],
+        "photoUrl": "https://images.unsplash.com/photo-1590412200988-a436970781fa?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["3 ripe tomatoes", "2 large eggs", "1/2 onion, diced", "Cumin & paprika", "Fresh cilantro"],
+        "steps": [
+          "Dice tomatoes and onions finely.",
+          "Sauté onions in olive oil until translucent, then add spices.",
+          "Add tomatoes and simmer until a thick sauce forms (approx 10 mins).",
+          "Crack eggs into sauce wells. Cover and simmer for 5-7 mins until set."
+        ]
+      },
+      {
+        "id": "caprese",
+        "title": "Caprese Salad with Aged Balsamic",
+        "time": "10 mins",
+        "difficulty": "Beginner",
+        "dietaryTags": ["keto", "vegetarian", "quick"],
+        "photoUrl": "https://images.unsplash.com/photo-1592417817098-8f3d6ef23a8f?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["4 ripe tomatoes", "200g fresh mozzarella", "Fresh basil", "Balsamic glaze", "Olive oil"],
+        "steps": [
+          "Alternate slices of tomato, mozzarella, and fresh basil leaves on a platter.",
+          "Drizzle with high-quality extra virgin olive oil.",
+          "Finish with a swirl of aged balsamic reduction and sea salt flakes."
+        ]
+      },
+      {
+        "id": "tomato_soup",
+        "title": "Roasted Garlic & Tomato Basil Soup",
+        "time": "35 mins",
+        "difficulty": "Medium",
+        "dietaryTags": ["vegan", "comfort"],
+        "photoUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["6 large tomatoes", "1 bulb garlic", "1 cup vegetable broth", "Fresh basil", "Olive oil"],
+        "steps": [
+          "Roast halved tomatoes and garlic bulb at 200°C for 25 mins until caramelized.",
+          "Blend roast tomatoes, garlic, fresh basil, and warm broth until silky smooth.",
+          "Season with cracked black pepper and olive oil drizzle."
+        ]
+      }
+    ]
+  },
+  "avocado": {
+    "id": "avocado",
+    "name": "Hass Avocado",
+    "tagline": "Oleic Monounsaturated Lipids & Potassium Density",
+    "category": "Nutrient-Dense Fruit",
+    "shelfLifeDays": 4,
+    "photoUrl": "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?auto=format&fit=crop&w=800&q=80",
+    "bioavailabilityNote": "Adding avocado to salads enhances fat-soluble carotenoid (lutein, zeaxanthin, beta-carotene) absorption from other veggies by 400-1500%.",
+    "colorSignature": { "r": 80, "g": 130, "b": 50 },
+    "macros": { "calories": 160, "protein": 2.0, "carbs": 8.5, "fat": 14.7 },
+    "minerals": {
+      "iron": 0.6,
+      "calcium": 12,
+      "potassium": 485,
+      "vitaminC": 10.0,
+      "fiber": 6.7,
+      "magnesium": 29,
+      "zinc": 0.64
+    },
+    "sustainability": { "co2PerKg": 0.85, "avgCostPerKg": 6.50 },
+    "comparisonTargets": ["spinach", "sweet_potato", "beetroot"],
+    "dishes": [
+      {
+        "id": "classic_guac",
+        "title": "Authentic Chunky Guacamole with Lime",
+        "time": "10 mins",
+        "difficulty": "Beginner",
+        "dietaryTags": ["keto", "vegan", "quick"],
+        "photoUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["2 ripe Hass avocados", "1/2 lime, juiced", "1/4 cup red onion", "Jalapeño & cilantro"],
+        "steps": [
+          "Halve avocados, remove pit, and scoop flesh into a bowl.",
+          "Mash coarsely with a fork, leaving chunky pieces.",
+          "Fold in diced red onion, jalapeño, cilantro, lime juice, and sea salt."
+        ]
+      },
+      {
+        "id": "avo_toast",
+        "title": "Artisanal Sourdough Avocado Toast",
+        "time": "8 mins",
+        "difficulty": "Easy",
+        "dietaryTags": ["vegan", "quick"],
+        "photoUrl": "https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["1 ripe avocado", "2 slices sourdough toast", "Radish slices", "Hemp seeds & chili flakes"],
+        "steps": [
+          "Toast thick sourdough slices until golden.",
+          "Smash ripe avocado with lemon juice, sea salt, and black pepper.",
+          "Spread generously over sourdough, top with radish slices and hemp seeds."
+        ]
+      },
+      {
+        "id": "green_goddess",
+        "title": "Green Goddess Creamy Avocado Dressing",
+        "time": "5 mins",
+        "difficulty": "Easy",
+        "dietaryTags": ["keto", "vegetarian", "quick"],
+        "photoUrl": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["1 avocado", "1/2 cup Greek yogurt", "Parsley & chives", "1 clove garlic", "Lemon juice"],
+        "steps": [
+          "Combine avocado, Greek yogurt, fresh herbs, garlic, lemon juice, and water in blender.",
+          "Blend until silky smooth and emerald green.",
+          "Serve as salad dressing or vegetable dip."
+        ]
+      }
+    ]
+  },
+  "beetroot": {
+    "id": "beetroot",
+    "name": "Dark Red Beetroot",
+    "tagline": "Inorganic Nitrates & Nitric Oxide Endothelial Vasodilation",
+    "category": "Root Vegetable",
+    "shelfLifeDays": 10,
+    "photoUrl": "https://images.unsplash.com/photo-1533230302382-70b14421b907?auto=format&fit=crop&w=800&q=80",
+    "bioavailabilityNote": "Dietary nitrates in beetroot convert to nitric oxide in the bloodstream, improving arterial compliance and lowering blood pressure.",
+    "colorSignature": { "r": 140, "g": 20, "b": 70 },
+    "macros": { "calories": 43, "protein": 1.6, "carbs": 9.6, "fat": 0.2 },
+    "minerals": {
+      "iron": 0.8,
+      "calcium": 16,
+      "potassium": 325,
+      "vitaminC": 4.9,
+      "fiber": 2.8,
+      "magnesium": 23,
+      "zinc": 0.35
+    },
+    "sustainability": { "co2PerKg": 0.30, "avgCostPerKg": 2.80 },
+    "comparisonTargets": ["carrot", "spinach", "sweet_potato"],
+    "dishes": [
+      {
+        "id": "beet_salad",
+        "title": "Roasted Beetroot & Goat Cheese Salad",
+        "time": "40 mins",
+        "difficulty": "Medium",
+        "dietaryTags": ["vegetarian", "comfort"],
+        "photoUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["3 medium beetroots", "100g goat cheese", "1/2 cup walnuts", "Wild arugula", "Vinaigrette"],
+        "steps": [
+          "Wrap beets in foil and roast at 200°C for 45 mins until tender.",
+          "Slice roasted beets into wedges.",
+          "Arrange bed of arugula, top with beets, goat cheese, and toasted walnuts.",
+          "Drizzle with honey mustard vinaigrette."
+        ]
+      },
+      {
+        "id": "borscht",
+        "title": "Traditional Ukrainian Beetroot Borscht",
+        "time": "45 mins",
+        "difficulty": "Medium",
+        "dietaryTags": ["comfort", "vegetarian"],
+        "photoUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["2 beets, grated", "1 potato, cubed", "1/4 cabbage", "1 carrot", "Sour cream & dill"],
+        "steps": [
+          "Sauté grated beets and carrots with tomato paste in olive oil for 10 mins.",
+          "Boil potatoes and cabbage in vegetable broth for 15 mins.",
+          "Combine beet mixture into soup pot and simmer for 10 mins.",
+          "Serve with fresh sour cream and dill."
+        ]
+      },
+      {
+        "id": "beet_hummus",
+        "title": "Artisanal Beetroot & Tahini Hummus",
+        "time": "15 mins",
+        "difficulty": "Easy",
+        "dietaryTags": ["high-protein", "vegan", "quick"],
+        "photoUrl": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["1 roasted beetroot", "1 can chickpeas", "3 tbsp tahini", "1 clove garlic", "Lemon juice"],
+        "steps": [
+          "Combine roasted beet, drained chickpeas, tahini, garlic, and lemon juice in blender.",
+          "Blend while pouring olive oil until ultra-creamy.",
+          "Garnish with sesame seeds and microgreens."
+        ]
+      }
+    ]
+  },
+  "sweet_potato": {
+    "id": "sweet_potato",
+    "name": "Orange Sweet Potato",
+    "tagline": "Low-Glycemic Complex Starch & Sustained Energy",
+    "category": "Root Tuber",
+    "shelfLifeDays": 21,
+    "photoUrl": "https://images.unsplash.com/photo-1596560548464-f010549b84d7?auto=format&fit=crop&w=800&q=80",
+    "bioavailabilityNote": "Boiling sweet potatoes retains more beta-carotene and results in a lower glycemic index compared to high-heat roasting.",
+    "colorSignature": { "r": 210, "g": 105, "b": 30 },
+    "macros": { "calories": 86, "protein": 1.6, "carbs": 20.1, "fat": 0.1 },
+    "minerals": {
+      "iron": 0.6,
+      "calcium": 30,
+      "potassium": 337,
+      "vitaminC": 2.4,
+      "fiber": 3.0,
+      "magnesium": 25,
+      "zinc": 0.30
+    },
+    "sustainability": { "co2PerKg": 0.28, "avgCostPerKg": 2.30 },
+    "comparisonTargets": ["carrot", "pumpkin", "avocado"],
+    "dishes": [
+      {
+        "id": "sweet_potato_wedges",
+        "title": "Crispy Baked Sweet Potato Wedges",
+        "time": "30 mins",
+        "difficulty": "Easy",
+        "dietaryTags": ["vegan", "comfort"],
+        "photoUrl": "https://images.unsplash.com/photo-1528751014936-863e6e7a319c?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["2 large sweet potatoes", "1 tbsp cornstarch", "2 tbsp olive oil", "Smoked paprika", "Garlic powder"],
+        "steps": [
+          "Cut sweet potatoes into uniform wedges.",
+          "Toss with cornstarch first, then coat with olive oil and spices.",
+          "Spread on baking tray leaving space between wedges.",
+          "Bake at 220°C (425°F) for 25 mins, flipping halfway."
+        ]
+      },
+      {
+        "id": "stuffed_sweet_potato",
+        "title": "Black Bean & Avocado Stuffed Sweet Potato",
+        "time": "45 mins",
+        "difficulty": "Easy",
+        "dietaryTags": ["high-protein", "vegan", "comfort"],
+        "photoUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["2 sweet potatoes, whole", "1 can black beans", "1/2 avocado", "Cilantro lime dressing"],
+        "steps": [
+          "Roast sweet potatoes whole at 200°C for 45 mins until soft.",
+          "Slice down middle and fluff interior with a fork.",
+          "Stuff with warm seasoned black beans, avocado, and cilantro dressing."
+        ]
+      },
+      {
+        "id": "sweet_potato_curry",
+        "title": "Coconut Sweet Potato & Chickpea Curry",
+        "time": "30 mins",
+        "difficulty": "Medium",
+        "dietaryTags": ["high-protein", "vegan", "comfort"],
+        "photoUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["300g sweet potato, cubed", "1 can chickpeas", "400ml coconut milk", "2 tbsp curry paste", "Spinach"],
+        "steps": [
+          "Sauté yellow curry paste in oil until fragrant.",
+          "Add sweet potato, chickpeas, and coconut milk; simmer for 20 mins until tender.",
+          "Stir in fresh spinach leaves until wilted.",
+          "Serve hot over steamed jasmine rice."
+        ]
+      }
+    ]
+  },
+  "pumpkin": {
+    "id": "pumpkin",
+    "name": "Sugar Pumpkin",
+    "tagline": "Electrolyte Balance & Satiety Fiber Matrix",
+    "category": "Squash / Gourd",
+    "shelfLifeDays": 30,
+    "photoUrl": "https://images.unsplash.com/photo-1570586437263-ab629fccc818?auto=format&fit=crop&w=800&q=80",
+    "bioavailabilityNote": "Pumpkin seeds (pepitas) are exceptionally dense in bioavailable magnesium and zinc—don't discard them when roasting!",
+    "colorSignature": { "r": 220, "g": 140, "b": 30 },
+    "macros": { "calories": 26, "protein": 1.0, "carbs": 6.5, "fat": 0.1 },
+    "minerals": {
+      "iron": 0.8,
+      "calcium": 21,
+      "potassium": 340,
+      "vitaminC": 9.0,
+      "fiber": 1.1,
+      "magnesium": 12,
+      "zinc": 0.32
+    },
+    "sustainability": { "co2PerKg": 0.32, "avgCostPerKg": 2.50 },
+    "comparisonTargets": ["sweet_potato", "carrot", "bell_pepper"],
+    "dishes": [
+      {
+        "id": "pumpkin_risotto",
+        "title": "Roasted Pumpkin & Sage Risotto",
+        "time": "35 mins",
+        "difficulty": "Medium",
+        "dietaryTags": ["vegetarian", "comfort"],
+        "photoUrl": "https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["300g pumpkin, roasted", "1 cup Arborio rice", "3 cups stock", "Fresh sage", "Parmesan"],
+        "steps": [
+          "Roast cubed pumpkin at 200°C for 20 mins; mash half.",
+          "Sauté shallots in butter, add Arborio rice, and toast for 2 mins.",
+          "Add warm stock 1 ladle at a time until absorbed.",
+          "Fold in mashed pumpkin, parmesan, and fried crisp sage leaves."
+        ]
+      },
+      {
+        "id": "pumpkin_soup",
+        "title": "Thai Red Curry Pumpkin & Coconut Soup",
+        "time": "25 mins",
+        "difficulty": "Easy",
+        "dietaryTags": ["vegan", "quick", "comfort"],
+        "photoUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["400g pumpkin puree", "2 tbsp red curry paste", "400ml coconut milk", "Soy sauce", "Cilantro"],
+        "steps": [
+          "Fry red curry paste in coconut milk until aromatic.",
+          "Add pumpkin puree, coconut milk, and stock; bring to boil.",
+          "Simmer for 15 mins. Season with lime juice and soy sauce.",
+          "Serve with fresh cilantro and toasted pumpkin seeds."
+        ]
+      },
+      {
+        "id": "pumpkin_tart",
+        "title": "Rustic Pumpkin & Feta Tart",
+        "time": "45 mins",
+        "difficulty": "Medium",
+        "dietaryTags": ["vegetarian", "comfort"],
+        "photoUrl": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["Puff pastry sheet", "200g sliced pumpkin", "1 red onion, caramelized", "100g feta", "Thyme"],
+        "steps": [
+          "Roll out puff pastry on baking tray.",
+          "Spread caramelized onions over pastry, leaving border.",
+          "Layer thinly sliced pumpkin, crumble feta, and scatter thyme.",
+          "Bake at 200°C (400°F) for 25 mins until pastry is golden brown."
+        ]
+      }
+    ]
+  },
+  "mushroom": {
+    "id": "mushroom",
+    "name": "Cremini Mushroom",
+    "tagline": "Natural Ergocalciferol Vitamin D & Glutamate Umami",
+    "category": "Fungi",
+    "shelfLifeDays": 5,
+    "photoUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80",
+    "bioavailabilityNote": "Exposing mushrooms to sunlight or UV light for 15 minutes before cooking converts ergosterol into Vitamin D2, boosting Vitamin D density by over 400%.",
+    "colorSignature": { "r": 180, "g": 165, "b": 150 },
+    "macros": { "calories": 22, "protein": 3.1, "carbs": 3.3, "fat": 0.3 },
+    "minerals": {
+      "iron": 0.5,
+      "calcium": 3,
+      "potassium": 318,
+      "vitaminC": 2.1,
+      "fiber": 1.0,
+      "magnesium": 9,
+      "zinc": 0.52
+    },
+    "sustainability": { "co2PerKg": 0.52, "avgCostPerKg": 5.20 },
+    "comparisonTargets": ["spinach", "zucchini", "broccoli"],
+    "dishes": [
+      {
+        "id": "garlic_mushrooms",
+        "title": "Pan-Seared Garlic Butter Cremini Mushrooms",
+        "time": "12 mins",
+        "difficulty": "Easy",
+        "dietaryTags": ["keto", "vegetarian", "quick"],
+        "photoUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["300g cremini mushrooms", "2 tbsp butter", "3 garlic cloves", "Thyme", "White wine splash"],
+        "steps": [
+          "Heat dry skillet over medium-high heat. Add mushrooms without crowding.",
+          "Sear undisturbed for 4 mins until deep golden brown.",
+          "Add butter, minced garlic, thyme, and salt; toss for 3 mins.",
+          "Deglaze pan with a splash of white wine or broth."
+        ]
+      },
+      {
+        "id": "mushroom_risotto",
+        "title": "Wild Mushroom & Truffle Oil Risotto",
+        "time": "40 mins",
+        "difficulty": "Medium",
+        "dietaryTags": ["vegetarian", "comfort"],
+        "photoUrl": "https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["250g wild mushrooms", "1 cup Arborio rice", "3 cups stock", "Truffle oil", "Parmesan"],
+        "steps": [
+          "Sauté wild mushrooms in olive oil until golden; set half aside.",
+          "Prepare risotto base by toasting rice with shallots, adding stock gradually.",
+          "Fold cooked mushrooms and parmesan into finished risotto.",
+          "Drizzle with truffle oil before serving."
+        ]
+      },
+      {
+        "id": "portobello_burger",
+        "title": "Balsamic Marinated Portobello Burger",
+        "time": "20 mins",
+        "difficulty": "Easy",
+        "dietaryTags": ["vegetarian", "quick"],
+        "photoUrl": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["2 large Portobello caps", "2 tbsp balsamic vinegar", "Brioche buns", "Arugula & swiss cheese"],
+        "steps": [
+          "Marinate portobello caps in balsamic vinegar, olive oil, and garlic for 10 mins.",
+          "Grill or pan-fry caps for 5 mins per side until tender.",
+          "Top with swiss cheese during last minute to melt.",
+          "Serve inside toasted brioche buns with arugula and aioli."
+        ]
+      }
+    ]
+  },
+  "zucchini": {
+    "id": "zucchini",
+    "name": "Courgette Zucchini",
+    "tagline": "Cellular Electrolytes & Low-Carb Fiber Matrix",
+    "category": "Summer Squash",
+    "shelfLifeDays": 7,
+    "photoUrl": "https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?auto=format&fit=crop&w=800&q=80",
+    "bioavailabilityNote": "Zucchini skin contains the highest concentration of lutein and zeaxanthin (antioxidants protecting macular vision)—never peel before cooking.",
+    "colorSignature": { "r": 60, "g": 130, "b": 70 },
+    "macros": { "calories": 17, "protein": 1.2, "carbs": 3.1, "fat": 0.3 },
+    "minerals": {
+      "iron": 0.4,
+      "calcium": 16,
+      "potassium": 261,
+      "vitaminC": 17.9,
+      "fiber": 1.0,
+      "magnesium": 18,
+      "zinc": 0.32
+    },
+    "sustainability": { "co2PerKg": 0.32, "avgCostPerKg": 2.40 },
+    "comparisonTargets": ["cucumber", "broccoli", "tomato"],
+    "dishes": [
+      {
+        "id": "zoodles",
+        "title": "Zucchini Noodles (Zoodles) with Fresh Pesto",
+        "time": "15 mins",
+        "difficulty": "Easy",
+        "dietaryTags": ["keto", "vegan", "quick"],
+        "photoUrl": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["2 medium zucchini", "1/2 cup basil pesto", "Cherry tomatoes", "Pine nuts & parmesan"],
+        "steps": [
+          "Spiralize zucchini into long noodles.",
+          "Sauté zoodles in 1 tsp olive oil for just 2 mins (don't overcook!).",
+          "Toss with fresh pesto and halved cherry tomatoes.",
+          "Top with parmesan and toasted pine nuts."
+        ]
+      },
+      {
+        "id": "zucchini_fritters",
+        "title": "Crispy Zucchini & Herb Fritters",
+        "time": "25 mins",
+        "difficulty": "Medium",
+        "dietaryTags": ["vegetarian", "comfort"],
+        "photoUrl": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["2 grated zucchini, squeezed dry", "1 egg", "1/3 cup flour", "Dill", "Tzatziki dip"],
+        "steps": [
+          "Grate zucchini, toss with salt, and squeeze out excess liquid in a clean tea towel.",
+          "Mix squeezed zucchini with beaten egg, flour, dill, and green onions.",
+          "Drop spoonfuls onto hot oiled pan and flatten into patties.",
+          "Fry 4 mins per side until golden brown. Serve with tzatziki."
+        ]
+      },
+      {
+        "id": "grilled_zucchini",
+        "title": "Charred Lemon Garlic Grilled Zucchini Planks",
+        "time": "12 mins",
+        "difficulty": "Easy",
+        "dietaryTags": ["keto", "vegan", "quick"],
+        "photoUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["3 zucchini, sliced lengthways", "2 tbsp olive oil", "1 lemon, juiced", "Red pepper flakes"],
+        "steps": [
+          "Slice zucchini into long 1/4-inch planks.",
+          "Brush both sides with olive oil, salt, and black pepper.",
+          "Grill on high heat for 3 mins per side for deep marks.",
+          "Drizzle with lemon juice and red pepper flakes."
+        ]
+      }
+    ]
+  },
+  "cucumber": {
+    "id": "cucumber",
+    "name": "English Cucumber",
+    "tagline": "Bioavailable Hydration & Structural Silica Matrix",
+    "category": "Cucurbit / Fruit-Veggie",
+    "shelfLifeDays": 8,
+    "photoUrl": "https://images.unsplash.com/photo-1449300079323-02e209d9d3a6?auto=format&fit=crop&w=800&q=80",
+    "bioavailabilityNote": "Cucumbers contain 95.2% structured cellular water with electrolytes (potassium & magnesium), providing superior hydration over plain water.",
+    "colorSignature": { "r": 90, "g": 160, "b": 80 },
+    "macros": { "calories": 15, "protein": 0.7, "carbs": 3.6, "fat": 0.1 },
+    "minerals": {
+      "iron": 0.3,
+      "calcium": 16,
+      "potassium": 147,
+      "vitaminC": 2.8,
+      "fiber": 0.5,
+      "magnesium": 13,
+      "zinc": 0.20
+    },
+    "sustainability": { "co2PerKg": 0.30, "avgCostPerKg": 2.20 },
+    "comparisonTargets": ["zucchini", "tomato", "bell_pepper"],
+    "dishes": [
+      {
+        "id": "greek_salad",
+        "title": "Authentic Village Greek Salad (Horiatiki)",
+        "time": "10 mins",
+        "difficulty": "Beginner",
+        "dietaryTags": ["keto", "vegetarian", "quick"],
+        "photoUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["1 English cucumber", "3 ripe tomatoes", "1 block feta cheese", "Kalamata olives", "Oregano"],
+        "steps": [
+          "Cut cucumber and tomatoes into thick chunky wedges.",
+          "Combine in bowl with sliced red onion and Kalamata olives.",
+          "Place a whole slab of feta cheese on top.",
+          "Sprinkle dried oregano and pour extra virgin olive oil."
+        ]
+      },
+      {
+        "id": "smashed_cucumber",
+        "title": "Smashed Asian Cucumber Salad with Chili Oil",
+        "time": "12 mins",
+        "difficulty": "Easy",
+        "dietaryTags": ["vegan", "quick"],
+        "photoUrl": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["2 cucumbers", "1 tbsp soy sauce", "1 tbsp black vinegar", "Chili crisp oil", "Sesame seeds"],
+        "steps": [
+          "Smash cucumbers with a rolling pin or flat knife blade to fracture open.",
+          "Cut diagonally into bite-sized pieces.",
+          "Toss with soy sauce, black vinegar, sesame oil, and crispy chili oil.",
+          "Garnish with toasted sesame seeds and cilantro."
+        ]
+      },
+      {
+        "id": "tzatziki",
+        "title": "Cool Greek Cucumber & Garlic Tzatziki",
+        "time": "15 mins",
+        "difficulty": "Easy",
+        "dietaryTags": ["keto", "vegetarian", "quick"],
+        "photoUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80",
+        "ingredients": ["1 cucumber, squeezed", "1.5 cups Greek yogurt", "2 cloves garlic", "Fresh dill", "Olive oil"],
+        "steps": [
+          "Grate cucumber finely and squeeze thoroughly to remove water.",
+          "Mix squeezed cucumber into thick Greek yogurt.",
+          "Stir in crushed garlic, fresh dill, olive oil, and lemon juice.",
+          "Chill in fridge for 30 mins before serving."
+        ]
+      }
+    ]
+  }
+}

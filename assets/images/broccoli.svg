@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="brocGrad" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#81c784"/>
+      <stop offset="50%" stop-color="#388e3c"/>
+      <stop offset="100%" stop-color="#1b5e20"/>
+    </radialGradient>
+    <linearGradient id="stemGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a5d6a7"/>
+      <stop offset="100%" stop-color="#4caf50"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f1a17" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" rx="32" fill="#0f1a17"/>
+  <g filter="url(#shadow)">
+    <!-- Main Stem -->
+    <path d="M 170,220 L 165,340 C 165,355 235,355 235,340 L 230,220 Z" fill="url(#stemGrad)"/>
+    <!-- Florets Cluster -->
+    <circle cx="200" cy="140" r="75" fill="url(#brocGrad)"/>
+    <circle cx="140" cy="160" r="55" fill="url(#brocGrad)"/>
+    <circle cx="260" cy="160" r="55" fill="url(#brocGrad)"/>
+    <circle cx="160" cy="110" r="50" fill="url(#brocGrad)"/>
+    <circle cx="240" cy="110" r="50" fill="url(#brocGrad)"/>
+    <!-- Texture Dots -->
+    <circle cx="180" cy="120" r="6" fill="#c8e6c9" opacity="0.4"/>
+    <circle cx="220" cy="130" r="8" fill="#c8e6c9" opacity="0.4"/>
+    <circle cx="150" cy="150" r="5" fill="#c8e6c9" opacity="0.4"/>
+    <circle cx="250" cy="150" r="7" fill="#c8e6c9" opacity="0.4"/>
+  </g>
+</svg>

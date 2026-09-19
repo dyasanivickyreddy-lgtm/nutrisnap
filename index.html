@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriSnap — Smart Kitchen Companion &amp; Nutrition Guide</title>
+  <meta name="description" content="NutriSnap: The neat, intuitive cooking companion. Cook with what is in your fridge, get step-by-step voice guidance, ingredient substitutions, and clean nutrition insights.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top App Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand" id="brandHomeBtn">
+        <div class="brand-logo-icon">🌿</div>
+        <div class="brand-text">
+          <span class="brand-name">NutriSnap</span>
+          <span class="brand-tagline">Kitchen Companion</span>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <nav class="nav-tabs">
+        <button class="nav-tab active" data-tab="cook">
+          <span class="tab-icon">🍳</span> Cook Today
+        </button>
+        <button class="nav-tab" data-tab="fridge">
+          <span class="tab-icon">🥗</span> My Fridge <span class="badge-count" id="navFridgeCount">4</span>
+        </button>
+        <button class="nav-tab" data-tab="nutrition">
+          <span class="tab-icon">✨</span> Nutrition &amp; Health
+        </button>
+      </nav>
+
+      <!-- Quick Action Buttons -->
+      <div class="nav-actions">
+        <button class="btn-action-pill" id="openScannerModalBtn">
+          <span>📷</span> Scan Produce
+        </button>
+        <button class="btn-action-icon" id="openShoppingBtn" title="Shopping List">
+          <span>🛒</span>
+          <span class="badge-dot" id="cartDot" style="display: none;"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main App Shell -->
+  <main class="app-shell">
+
+    <!-- ==================== TAB 1: COOK TODAY ==================== -->
+    <section class="tab-view active" id="tabCook">
+      
+      <!-- Hero Produce Picker Bar -->
+      <div class="produce-picker-wrapper">
+        <div class="section-header-compact">
+          <div class="header-titles">
+            <span class="eyebrow-text">WHAT DO YOU WANT TO COOK WITH?</span>
+            <h2 class="section-heading">Choose or Scan an Ingredient</h2>
+          </div>
+          <div class="picker-search-box">
+            <input type="text" id="produceSearchInput" placeholder="🔍 Search produce..." aria-label="Search vegetables">
+          </div>
+        </div>
+
+        <!-- Horizontal Scrollable Produce Cards -->
+        <div class="produce-carousel" id="produceCarousel">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+
+      <!-- Active Ingredient Spotlight Banner -->
+      <div class="ingredient-spotlight-card" id="ingredientSpotlight">
+        <div class="spotlight-image-col">
+          <img id="spotlightImage" src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80" alt="Active Produce">
+          <div class="spotlight-badge" id="spotlightCategory">Leafy Green</div>
+        </div>
+        <div class="spotlight-details-col">
+          <div class="spotlight-meta-top">
+            <span class="freshness-chip" id="spotlightShelfLife">⏰ Fresh for ~5 Days</span>
+            <span class="health-score-chip" id="spotlightHealthScore">⭐ 98/100 Nutrient Score</span>
+          </div>
+          <h1 class="spotlight-title" id="spotlightName">Baby Spinach</h1>
+          <p class="spotlight-tagline" id="spotlightTagline">Plant-Based Non-Heme Iron &amp; Bone Calcium Density</p>
+          
+          <!-- Bioavailability Tip Pill -->
+          <div class="bio-tip-pill">
+            <span class="bio-tip-icon">💡</span>
+            <span id="spotlightBioTip">Pairing with Vitamin C (lemon juice or bell peppers) boosts plant iron absorption by 300%.</span>
+          </div>
+
+          <div class="spotlight-actions">
+            <button class="btn-primary" id="spotlightCookBtn">
+              <span>🍳</span> View 3 Recipes Below
+            </button>
+            <button class="btn-secondary" id="spotlightAddToFridgeBtn">
+              <span>+</span> Save to My Fridge
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recipe Studio Section -->
+      <div class="recipes-container" id="recipesSection">
+        <div class="recipe-filter-bar">
+          <div class="recipe-heading-group">
+            <h3 class="recipe-section-title">Recipes You Can Make Right Now</h3>
+            <p class="recipe-section-sub">Tested, practical dishes tailored to your selected produce.</p>
+          </div>
+          <div class="dietary-filter-pills" id="dietaryFilterPills">
+            <button class="diet-pill active" data-filter="all">All</button>
+            <button class="diet-pill" data-filter="quick">⚡ Quick (&lt;15m)</button>
+            <button class="diet-pill" data-filter="high-protein">💪 High Protein</button>
+            <button class="diet-pill" data-filter="keto">🥑 Keto / Low-Carb</button>
+            <button class="diet-pill" data-filter="vegan">🌱 Vegan</button>
+            <button class="diet-pill" data-filter="comfort">🍲 Comfort</button>
+          </div>
+        </div>
+
+        <!-- Recipe Cards Grid -->
+        <div class="recipes-grid" id="recipesGrid">
+          <!-- Dynamically populated via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 2: MY FRIDGE / CRISPER DRAWER ==================== -->
+    <section class="tab-view" id="tabFridge">
+      <div class="fridge-view-header">
+        <div>
+          <span class="eyebrow-text">SMART CRISPER DRAWER</span>
+          <h2 class="section-heading">What's in Your Fridge</h2>
+          <p class="section-subtext">Cook expiring produce first to reduce grocery waste and save money.</p>
+        </div>
+        <button class="btn-primary" id="openAddFridgeModalBtn">
+          <span>+</span> Add Produce to Fridge
+        </button>
+      </div>
+
+      <!-- Multi-Item Fusion Bar -->
+      <div class="fusion-prompt-card" id="fusionPromptCard">
+        <div class="fusion-info">
+          <div class="fusion-icon">🥘</div>
+          <div>
+            <div class="fusion-title">Multi-Ingredient Cooking Matcher</div>
+            <div class="fusion-subtitle" id="fusionStatusText">Select 2 or more ingredients below to find combination recipes.</div>
+          </div>
+        </div>
+        <button class="btn-primary" id="findFusionRecipesBtn" style="display: none;">
+          Find Combined Meal ➡️
+        </button>
+      </div>
+
+      <!-- Fridge Items Grid -->
+      <div class="fridge-grid" id="fridgeGrid">
+        <!-- Dynamically populated via JS -->
+      </div>
+    </section>
+
+    <!-- ==================== TAB 3: NUTRITION & HEALTH ==================== -->
+    <section class="tab-view" id="tabNutrition">
+      <div class="nutrition-view-header">
+        <div>
+          <span class="eyebrow-text">SCIENCE-BACKED NUTRITION</span>
+          <h2 class="section-heading">Nutrient &amp; Mineral Deep-Dive</h2>
+          <p class="section-subtext">Validated USDA nutritional telemetry scaled to your preferred serving portion.</p>
+        </div>
+        <!-- Portion Control Slider -->
+        <div class="portion-box">
+          <div class="portion-label-row">
+            <span>Portion Weight:</span>
+            <span class="portion-val-badge" id="nutritionPortionBadge">100g</span>
+          </div>
+          <input type="range" id="nutritionPortionSlider" min="50" max="400" step="25" value="100" class="clean-slider">
+        </div>
+      </div>
+
+      <!-- Macro Cards Row -->
+      <div class="macros-summary-row">
+        <div class="macro-summary-card">
+          <div class="macro-icon">🔥</div>
+          <div class="macro-metric-val" id="macroCaloriesVal">23</div>
+          <div class="macro-metric-label">Calories (kcal)</div>
+        </div>
+        <div class="macro-summary-card">
+          <div class="macro-icon">💪</div>
+          <div class="macro-metric-val" id="macroProteinVal">2.9g</div>
+          <div class="macro-metric-label">Protein</div>
+        </div>
+        <div class="macro-summary-card">
+          <div class="macro-icon">🌾</div>
+          <div class="macro-metric-val" id="macroCarbsVal">3.6g</div>
+          <div class="macro-metric-label">Carbohydrates</div>
+        </div>
+        <div class="macro-summary-card">
+          <div class="macro-icon">🥑</div>
+          <div class="macro-metric-val" id="macroFatVal">0.4g</div>
+          <div class="macro-metric-label">Healthy Fats</div>
+        </div>
+      </div>
+
+      <!-- Micronutrient Bars Grid -->
+      <div class="nutrition-details-grid">
+        <div class="panel-card">
+          <h3 class="panel-card-title">Essential Vitamins &amp; Minerals (% Daily Value)</h3>
+          <div class="micronutrients-bar-list" id="nutritionMicrosList">
+            <!-- Dynamically populated via JS -->
+          </div>
+        </div>
+
+        <div class="panel-card">
+          <h3 class="panel-card-title">Side-by-Side Mineral Comparison</h3>
+          <div class="compare-select-row">
+            <span style="font-size: 0.88rem; color: var(--text-secondary);">Benchmark vs:</span>
+            <select id="nutritionCompareSelect" class="clean-select">
+              <!-- Dynamically populated via JS -->
+            </select>
+          </div>
+          <div class="comparison-bars-container" id="nutritionCompareContainer">
+            <!-- Dynamically populated via JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== MODAL: SMART SCANNER & WEBCAM ==================== -->
+  <div class="modal-backdrop" id="scannerModal">
+    <div class="modal-card modal-scanner">
+      <button class="modal-close-btn" id="closeScannerModalBtn">&times;</button>
+      <h3 class="modal-title">📷 Produce Vision Scanner</h3>
+      <p class="modal-subtitle">Take a live photo or upload an image from your device.</p>
+
+      <!-- Scanner Tabs: Upload vs WebCam -->
+      <div class="scanner-switch-tabs">
+        <button class="scanner-tab-btn active" id="tabUploadTrigger">📁 Upload Photo</button>
+        <button class="scanner-tab-btn" id="tabWebcamTrigger">📹 Live WebCam</button>
+      </div>
+
+      <!-- Upload View -->
+      <div class="scanner-body-panel active" id="uploadBodyPanel">
+        <div class="clean-dropzone" id="modalDropzone">
+          <div class="dropzone-illustration">🖼️</div>
+          <div class="dropzone-main-text">Drag and drop any food photo here</div>
+          <div class="dropzone-sub-text">or click to browse from your computer</div>
+          <input type="file" id="modalFileInput" class="hidden-file-input" accept="image/*">
+        </div>
+      </div>
+
+      <!-- WebCam View -->
+      <div class="scanner-body-panel" id="webcamBodyPanel">
+        <div class="webcam-viewport">
+          <video id="webcamStreamVideo" autoplay playsinline></video>
+          <div class="scanner-hud-reticle"></div>
+        </div>
+        <div class="webcam-actions">
+          <button class="btn-primary" id="captureWebcamBtn">📸 Snap &amp; Identify</button>
+        </div>
+      </div>
+
+      <!-- Processing Canvas Container (Hidden processing engine) -->
+      <canvas id="hiddenProcessingCanvas" style="display: none;"></canvas>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL: STEP-BY-STEP COOKING COMPANION ==================== -->
+  <div class="modal-backdrop" id="cookingModal">
+    <div class="modal-card modal-cooking">
+      <button class="modal-close-btn" id="closeCookingModalBtn">&times;</button>
+      
+      <!-- Recipe Header -->
+      <div class="cooking-header">
+        <div class="cooking-header-text">
+          <div class="cooking-meta-tags" id="cookingTagsRow"></div>
+          <h2 class="cooking-title" id="cookingRecipeTitle">Recipe Title</h2>
+          <div class="cooking-meta-line" id="cookingRecipeMeta">⏱️ 25 mins • 📊 Easy</div>
+        </div>
+        <!-- Portion Multiplier & Fullscreen Focus Mode -->
+        <div class="cooking-header-actions">
+          <div class="portion-btn-group">
+            <span class="portion-group-label">Servings:</span>
+            <button class="portion-scale-btn active" data-scale="1">1x</button>
+            <button class="portion-scale-btn" data-scale="2">2x</button>
+            <button class="portion-scale-btn" data-scale="4">4x</button>
+          </div>
+          <button class="btn-secondary-sm" id="enterFocusModeBtn" title="Full screen focus mode">
+            🖥️ Focus Mode
+          </button>
+        </div>
+      </div>
+
+      <!-- Cooking Step Timer Banner -->
+      <div class="cooking-timer-strip">
+        <div class="timer-display-group">
+          <span class="timer-label">STEP TIMER</span>
+          <span class="timer-digits" id="cookingTimerDigits">10:00</span>
+        </div>
+        <div class="timer-button-group">
+          <button class="btn-timer-pill" id="cookingTimerStart">▶ Start</button>
+          <button class="btn-timer-pill" id="cookingTimerPause">⏸ Pause</button>
+          <button class="btn-timer-pill" id="cookingTimerReset">↺ Reset</button>
+          <button class="btn-read-aloud" id="cookingReadAllBtn">🔊 Read Steps Aloud</button>
+        </div>
+      </div>
+
+      <!-- Main Recipe Content Grid -->
+      <div class="cooking-content-grid">
+        <!-- Ingredients Checklist -->
+        <div class="cooking-ingredients-box">
+          <div class="ingredients-header">
+            <h4>Ingredients</h4>
+            <button class="btn-text-action" id="addAllToCartBtn">+ Add to Shopping List</button>
+          </div>
+          <div class="ingredients-checklist" id="cookingIngredientsList">
+            <!-- Dynamically populated via JS -->
+          </div>
+        </div>
+
+        <!-- Preparation Steps -->
+        <div class="cooking-steps-box">
+          <h4>Step-by-Step Guide</h4>
+          <div class="steps-flow-list" id="cookingStepsList">
+            <!-- Dynamically populated via JS -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== MODAL: FULL-SCREEN COOKING FOCUS MODE ==================== -->
+  <div class="focus-screen" id="focusModeScreen">
+    <div class="focus-top-bar">
+      <div class="focus-recipe-name" id="focusRecipeTitle">Palak Paneer</div>
+      <button class="btn-secondary-sm" id="exitFocusModeBtn">✕ Exit Focus Mode</button>
+    </div>
+    <div class="focus-center-body">
+      <div class="focus-step-indicator" id="focusStepIndicator">STEP 1 OF 4</div>
+      <div class="focus-step-instruction" id="focusStepInstruction">
+        Blanch spinach leaves in boiling water for 2 mins, then submerge in ice water to maintain color.
+      </div>
+      <div class="focus-controls">
+        <button class="btn-secondary" id="focusPrevStepBtn">⬅️ Previous</button>
+        <button class="btn-action-pill" id="focusSpeakStepBtn">🔊 Speak Step</button>
+        <button class="btn-primary" id="focusNextStepBtn">Next Step ➡️</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== DRAWER: SHOPPING LIST ==================== -->
+  <div class="drawer-overlay" id="shoppingDrawerOverlay">
+    <div class="drawer-panel" id="shoppingDrawer">
+      <div class="drawer-header">
+        <div class="drawer-title-group">
+          <span class="drawer-icon">🛒</span>
+          <h3>Shopping List</h3>
+        </div>
+        <button class="drawer-close-btn" id="closeShoppingDrawerBtn">&times;</button>
+      </div>
+
+      <div class="drawer-actions-bar">
+        <button class="btn-secondary-sm" id="copyShoppingListBtn">📋 Copy List</button>
+        <button class="btn-secondary-sm" id="clearShoppingListBtn">Clear All</button>
+      </div>
+
+      <div class="drawer-items-list" id="shoppingListContainer">
+        <!-- Dynamically populated via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-rack" id="toastRack"></div>
+
+  <!-- Client-Side Scripts -->
+  <script src="imageProcessor.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
